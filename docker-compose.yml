@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  vs-docker:
+    image: ${DOCKER_REGISTRY-}vsdocker
+    build:
+      context: .
+      dockerfile: vs-docker/Dockerfile
